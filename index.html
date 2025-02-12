@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -154,6 +153,69 @@
         .feature-card p {
             color: #666;
             line-height: 1.6;
+        }
+
+        /* Insights Section */
+        .insights {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+        }
+
+        .insights-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .insight-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .insight-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .insight-card h3 {
+            padding: 1.5rem;
+            margin: 0;
+            font-size: 1.25rem;
+            color: #1a1a1a;
+        }
+
+        .insight-card p {
+            padding: 0 1.5rem 1.5rem;
+            margin: 0;
+            color: #666;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .feature-icon {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover .feature-icon {
+            transform: scale(1.05);
         }
 
         /* Statistics Section */
@@ -347,19 +409,37 @@
     <section class="features" id="features">
         <div class="features-grid">
             <div class="feature-card" data-aos="fade-up">
-                <img src="feature-icon-1.svg" alt="" class="feature-icon">
+                <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e" alt="AI Feature" class="feature-icon">
                 <h3>AI-Powered Matching</h3>
                 <p>Match candidates with opportunities using advanced AI algorithms and market data.</p>
             </div>
             <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-                <img src="feature-icon-2.svg" alt="" class="feature-icon">
+                <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5" alt="Market Intelligence" class="feature-icon">
                 <h3>Market Intelligence</h3>
                 <p>Access real-time market insights and salary benchmarks to make informed decisions.</p>
             </div>
             <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-                <img src="feature-icon-3.svg" alt="" class="feature-icon">
+                <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" alt="Analytics" class="feature-icon">
                 <h3>Campaign Analytics</h3>
                 <p>Track and optimize your recruitment campaigns with detailed analytics.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="insights" id="insights">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Market Insights</h2>
+            <div class="insights-grid">
+                <div class="insight-card" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Data Analysis" class="insight-image">
+                    <h3>Data-Driven Decisions</h3>
+                    <p>Make informed decisions backed by real-time market data and AI analysis.</p>
+                </div>
+                <div class="insight-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" alt="Talent Pipeline" class="insight-image">
+                    <h3>Talent Pipeline</h3>
+                    <p>Build and maintain a strong pipeline of qualified candidates.</p>
+                </div>
             </div>
         </div>
     </section>
